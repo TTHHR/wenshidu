@@ -16,6 +16,7 @@ import org.json.JSONObject
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.net.Socket
+import java.nio.charset.Charset
 
 
 class MainActivity : AppCompatActivity() {
@@ -35,14 +36,14 @@ class MainActivity : AppCompatActivity() {
                     Log.e("request", "to server")
                     socket = Socket("wjy.qingyuyu.cn", 2333)
                     val out = socket.getOutputStream()
-                    out.write("{\"token\":\"这里是你的TOKEN\",\"need\":\"get\"}\n".toByteArray())
+                    out.write("{\"token\":\"你的token\",\"need\":\"get\"}\n".toByteArray())
                     out.flush()
                     socket.shutdownOutput()
                     val i = socket.getInputStream()
                     val s = BufferedReader(InputStreamReader(i)).readLine()
                     val json = JSONObject(s)
                     runOnUiThread {
-                        text.text = json.getString("data")
+                        text.text = String(json.getString("data").toByteArray(), Charset.forName("utf-8"))
                     }
                     Thread.sleep(5000)
                 }
