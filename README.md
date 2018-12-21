@@ -7,6 +7,8 @@
 APP自己写的
       （包括蓝牙的连接，数据的显示）
 ![Image text](https://raw.githubusercontent.com/TTHHR/wenshidu/master/Android/android.png)
+
+
 linux和windows也是自己写的
       （include all）
       
