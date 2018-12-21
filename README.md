@@ -9,7 +9,10 @@ APP自己写的
 ![Image text](https://raw.githubusercontent.com/TTHHR/wenshidu/master/Android/android.png)
 linux和windows也是自己写的
       （include all）
-      ![Image text](https://raw.githubusercontent.com/TTHHR/wenshidu/master/linux/linux.png)
+      
+      
+![Image text](https://raw.githubusercontent.com/TTHHR/wenshidu/master/linux/linux.png)
+      
 ![Image text](https://raw.githubusercontent.com/TTHHR/wenshidu/master/windows/windows.png)
 
 
